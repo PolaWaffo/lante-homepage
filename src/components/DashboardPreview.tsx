@@ -14,7 +14,7 @@ export function DashboardPreview() {
           alt=""
           className="h-16 w-full rounded object-cover"
         />
-        <div className="mx-auto -mt-5 h-12 w-12 rounded-full border-4 border-sky-100 bg-orange/80" />
+        <div className="mx-auto absolute z-15 -mt-5 h-12 w-12 rounded-full border-4 border-sky-100 bg-orange/80" />
         <span className="relative -top-2 rounded-full bg-orange px-1 text-[5px] text-white">
           Landlord
         </span>
