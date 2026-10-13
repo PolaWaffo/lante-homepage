@@ -1,0 +1,105 @@
+@import "tailwindcss";
+@theme {
+  --color-navy: #020d19;
+  --color-orange: #fd6509;
+  --color-peach: #fd65090d;
+  --color-surface: #fafafa;
+  --color-panel: #f3f3f3;
+  --color-muted: #818994;
+  --font-sans: "Poppins", sans-serif;
+  --radius-card: 1rem;
+  --text-body: 0.8125rem;
+  --text-body--line-height: 1.5;
+  --text-heading: clamp(1.75rem, 2.6vw, 2.25rem);
+  --text-heading--line-height: 1.25;
+  --text-display: clamp(2.6rem, 7.5vw, 6.5rem);
+  --text-display--line-height: 1.03;
+  --text-price: clamp(2.5rem, 4vw, 3.375rem);
+}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 1.5rem;
+    overflow-x: hidden;
+  }
+  body {
+    margin: 0;
+    background: var(--color-surface);
+    color: var(--color-navy);
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    overflow-y: scroll;
+    
+  }
+  body::-webkit-scrollbar{
+    display: none;
+  }
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+  button {
+    cursor: pointer;
+  }
+  a,
+  button {
+    transition:
+      background-color 0.2s,
+      color 0.2s,
+      border-color 0.2s;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-orange);
+    outline-offset: 4px;
+  }
+  h1,
+  h2,
+  h3 {
+    letter-spacing: -0.045em;
+  }
+  p {
+    line-height: 1.5;
+  }
+  summary {
+    cursor: pointer;
+    list-style: none;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+}
+@layer components {
+  .page-container {
+    @apply mx-auto w-full max-w-290 px-6 md:px-10 lg:px-20;
+  }
+  .section-heading {
+    @apply text-heading font-semibold;
+  }
+  .nav-link {
+    @apply rounded-sm text-white hover:text-orange;
+  }
+  .footer-link {
+    @apply inline-block hover:text-orange;
+  }
+  .dashboard-preview {
+    @apply relative mx-auto mt-9 w-[84%] max-w-202.5 rounded-t-[28px] border border-white/60 p-2;
+  }
+  .dashboard-preview::after {
+    content: "";
+    position: absolute;
+    inset: 25% -15% -1px;
+    background: linear-gradient(transparent, #000 95%);
+    pointer-events: none;
+  }
+}
