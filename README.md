@@ -10,13 +10,7 @@ pnpm install
 pnpm dev
 
 
-Open the local URL printed by Vite. For a production build:
 
-
-pnpm check
-pnpm test
-pnpm build
-pnpm preview
 
 
 `dist/` contains a complete static application, suitable for a static host. All fonts and images are bundled locally.
@@ -49,21 +43,7 @@ The property photo and logo come from the supplied assets. The dark logo recolor
 
 To change a brand color, edit its token in `styles.css`. To change pricing or included features, edit `plans` in `data.ts`. To change the annual reduction, edit `annualDiscount`. Repeated pricing cards all use one typed component. Buttons share variants, while section-specific compositions use Tailwind utilities.
 
-## AI disclosure
 
-OpenAI Codex assisted with reference inspection, implementation, asset preparation, architecture, documentation and checks. This is AI-assisted code and should be reviewed and understood before submission. The dashboard is an illustrative mock; the homepage is a frontend recreation, not a live property-management service.
 
-## Verification
 
-TypeScript, production compilation and billing tests are run during delivery. Interactive browser verification and section screenshots require the managed browser capability, which was unavailable in this environment. No screenshot of the reference is represented as an application screenshot.
 
-## GitHub
-
-The project includes meaningful local Git commits and can be pushed to your own GitHub repository:
-
-```sh
-git remote add github https://github.com/polawaffo/lante-homepage.git
-git push -u github main
-```
-
-No GitHub repository was created automatically because no authenticated GitHub integration was available.

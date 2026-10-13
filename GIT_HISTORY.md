@@ -1,1 +1,0 @@
-To restore the meaningful Git commits, run `git clone lante-history.bundle lante-source` from this directory. Then `cd lante-source`, add your GitHub remote and push main. The deployed source is also retained in the application source repository. No GitHub repository was created.
