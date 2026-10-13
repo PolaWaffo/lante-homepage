@@ -14,7 +14,7 @@ export function DashboardPreview() {
         alt="Lante dashboard preview"
       />
 
-      <div className="absolute -left-5 top-24 z-20 w-60 rounded-md border-2 border-white bg-white p-2 text-center text-navy shadow-lg">
+      <div className="absolute -left-10 top-24 z-20 w-60 rounded-md border-2 border-white bg-white p-2 text-center text-navy shadow-lg">
         <img
           src="/assets/property.jpg"
           alt=""
@@ -23,7 +23,7 @@ export function DashboardPreview() {
 
         <div className="relative z-10 mx-auto -mt-5 h-12 w-12 rounded-full border-4 border-sky-100 bg-orange/80" />
 
-        <span className="relative z-20 -top-2 right-0 ml-5 rounded-full bg-orange px-2 py-1 text-[8px] text-white">
+        <span className="relative z-20 -top-1 rounded-full bg-orange px-2 py-1 text-[8px] text-white">
           Landlord
         </span>
 
