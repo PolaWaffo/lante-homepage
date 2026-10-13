@@ -35,7 +35,7 @@ export function DashboardPreview() {
           Landlord
         </span>
 
-        <p className="pb-1 text-[10px]">Tracy Waseka</p>
+        <p className="pb-1 text-[10px]">Pola Waffo</p>
       </div>
     </div>
   );
