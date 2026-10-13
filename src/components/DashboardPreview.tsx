@@ -21,7 +21,13 @@ export function DashboardPreview() {
           className="h-16 w-full rounded object-cover"
         />
 
-        <div className="relative z-10 mx-auto -mt-5 h-12 w-12 rounded-full border-4 border-sky-100 bg-orange/80" />
+        <div className="relative z-10 mx-auto -mt-5 h-12 w-12 rounded-full border-4 border-sky-100 bg-orange/80">
+            <img
+          src="/assets/pola.jpg"
+          alt=""
+          className="h-16 w-full rounded object-cover"
+        />
+        </div>
 
         <span className="relative z-20 -top-1 rounded-full bg-orange px-2 py-1 text-[8px] text-white">
           Landlord
